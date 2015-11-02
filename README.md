@@ -6,7 +6,7 @@ This part of the project is responsable for exposing Arduino Microcontroller Boa
 
 ![alt tag](https://github.com/lferst/HouseAutomations/blob/master/arduinoProject/Arduino.png)
 
-Web Application (J2EE/AngularJS):
+<b>Web Application (J2EE/AngularJS):</b>
 
 
 
