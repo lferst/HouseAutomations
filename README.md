@@ -6,9 +6,9 @@ This part of the project is responsable for exposing Arduino Microcontroller Boa
 
 ![alt tag](https://github.com/lferst/HouseAutomations/blob/master/arduinoProject/Arduino.png)
 
-<b>Web Application (J2EE/AngularJS):</b>
+<b>Web Application (J2EE/REST/AngularJS):</b>
 
-This next part of the project contains the Web application which users can esaily use to interact with Home IR Devices from the internet. 
+This next part of the project contains the Web application to deal with Arduino exposed Web Services.
 
 
 
