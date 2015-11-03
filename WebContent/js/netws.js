@@ -19,69 +19,69 @@
         //alert(id);
     	$http.defaults.useXDomain = true;
     	$http.defaults.headers.common['X-Requested-With'];
-    	//TV == 1
-    	if (id == 1){
+    	//TV == 3
+    	if (id == 3){
     		app.tvLoadAnswer='showTVLoading';
-    		$http({method: 'GET', url: '/HouseAutometions/rest/device/2'}).
+    		$http({method: 'GET', url: '/HouseAutometions/rest/device/3'}).
     			success(function(data, status, headers, config) {
             
     				app.tvLoadAnswer='notShowTVLoading';
-    				app.tvAnswer = 'on';
+					//As IR command its the same for on and off
+    				if (app.tvAnswer == 'on'){
+						app.tvAnswer = 'off';
+						app.tvAction = 'Turn On';
+					}else{
+						app.tvAnswer = 'on';
+						app.tvAction = 'Turn Off';
+					}
 
     			}).
     			error(function(data, status, headers, config) {
     					app.tvLoadAnswer='notShowTVLoading';
-    					if (app.tvAnswer == 'on'){
-    						app.tvAnswer = 'off';
-    						app.tvAction = 'Turn On';
-    					}else{
-    						app.tvAnswer = 'on';
-    						app.tvAction = 'Turn Off';
-    					}
     					
     			});
     	}
-    	//Air == 2
-    	if (id == 2){
+    	//Air == 6
+    	if (id == 6){
     		app.airLoadAnswer='showAIRLoading';
-    		$http({method: 'GET', url: '/HouseAutometions/rest/device/2'}).
+    		$http({method: 'GET', url: '/HouseAutometions/rest/device/6'}).
     			success(function(data, status, headers, config) {
-            
+					//As IR command its the same for on and off
     				app.airLoadAnswer='notShowAIRLoading';
-    				app.airAnswer='on';
+					if (app.airAnswer == 'on'){
+						app.airAnswer = 'off';
+						app.airAction = 'Turn On';
+					}else{
+						app.airAnswer = 'on';
+						app.airAction = 'Turn Off';
+					}
 
     			}).
     			error(function(data, status, headers, config) {
     					app.airLoadAnswer='notShowAIRLoading';
-    					if (app.airAnswer == 'on'){
-    						app.airAnswer = 'off';
-    						app.airAction = 'Turn On';
-    					}else{
-    						app.airAnswer = 'on';
-    						app.airAction = 'Turn Off';
-    					}
+
         	 
     			});
     	}
-    	//NET = 3
-    	if (id == 3){
+    	//NET = 2
+    	if (id == 2){
     		app.netLoadAnswer='showNETLoading';
     		$http({method: 'GET', url: '/HouseAutometions/rest/device/2'}).
     			success(function(data, status, headers, config) {
-            
+					//As IR command its the same for on and off
     				app.netLoadAnswer='notShowNETLoading';
     				app.netAnswer='on';
+ 					if (app.netAnswer == 'on'){
+						app.netAnswer = 'off';
+						app.netAction = 'Turn On';
+					}else{
+						app.netAnswer = 'on';
+						app.netAction = 'Turn Off';
+					}
 
     			}).
     			error(function(data, status, headers, config) {
     					app.netLoadAnswer='notShowNETLoading';
-    					if (app.netAnswer == 'on'){
-    						app.netAnswer = 'off';
-    						app.netAction = 'Turn On';
-    					}else{
-    						app.netAnswer = 'on';
-    						app.netAction = 'Turn Off';
-    					}
         	 
     			});
     	}	

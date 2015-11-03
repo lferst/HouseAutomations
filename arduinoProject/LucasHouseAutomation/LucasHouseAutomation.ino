@@ -21,9 +21,6 @@ LiquidCrystal lcd(9, 8, 6, 5, 3, 2);
 ////////////////////////////////////////////////////////////////////////
 //CONFIGURE
 ////////////////////////////////////////////////////////////////////////
-  byte ip[] = { 192, 168, 0, 11 };   //Manual setup only
-  byte gateway[] = { 192, 168, 0, 1 }; //Manual setup only
-  byte subnet[] = { 255, 255, 255, 0 }; //Manual setup only
 
   // if need to change the MAC address (Very Rare)
   byte mac[] = { 0x90, 0xA2, 0xDA, 0x10, 0x06, 0x11 };
@@ -58,11 +55,8 @@ void setup(){
 
 void loop(){
 
-   // set the cursor to column 0, line 1
-  // (note: line 1 is the second row, since counting begins with 0):
+  // set the cursor to column 0, line 1
   lcd.setCursor(0, 1);
-  // print the number of seconds since reset:
-  //lcd.print(millis() / 1000);
   
   // listen for incoming clients, and process qequest.
   checkForClient();
