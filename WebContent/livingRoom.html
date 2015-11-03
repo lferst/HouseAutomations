@@ -97,7 +97,7 @@
               <tr>
                 <td><img alt="Kitchen" src="images/tv.png" width="50px" height="20%"></td>
                 <td><span ng-class="app.tvAnswer == 'off' ? 'label label-danger' : 'label label-success'">{{app.tvAnswer}}</span><img  src="images/loading_spinner.gif" width="40%" height="20%" ng-style="app.tvLoadAnswer == 'showTVLoading' && {'visibility': 'visible'} || app.tvLoadAnswer == 'notShowTVLoading' && {'visibility': 'hidden'}" style="visibility: hidden"></td>
-                <td><a class="btn btn-sm btn-default" href="#" role="button" ng-click="getActor(3)">{{app.tvAction}}</a></td>
+                <td><a class="btn btn-sm btn-default" href="#" role="button" ng-click="getActor(3)">{{app.tvAction}}</a><span class="label label-warning" ng-style="app.tvLoadError == 'showTVError' && {'visibility': 'visible'} || app.tvLoadError == 'notShowTVError' && {'visibility': 'hidden'}" style="visibility: hidden">Error</span></td>
               </tr>
               <tr>
                 <td><img alt="BedRoom" src="images/airConditioned.jpg" width="50px" height="20%"></td>

@@ -13,6 +13,7 @@
 	app.tvAction = 'Turn On';
 	app.airAction = 'Turn On';
 	app.netAction = 'Turn On';
+	app.tvLoadError='notShowTVError';
 	
         $scope.getActor = function(id) {
     	
@@ -26,6 +27,7 @@
     			success(function(data, status, headers, config) {
             
     				app.tvLoadAnswer='notShowTVLoading';
+    				app.tvLoadError='notShowTVError';
 					//As IR command its the same for on and off
     				if (app.tvAnswer == 'on'){
 						app.tvAnswer = 'off';
@@ -38,6 +40,7 @@
     			}).
     			error(function(data, status, headers, config) {
     					app.tvLoadAnswer='notShowTVLoading';
+    					app.tvLoadError='showTVError';
     					
     			});
     	}
