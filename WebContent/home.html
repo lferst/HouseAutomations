@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en" ng-app>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,50 +9,66 @@
     <meta name="description" content="">
     <meta name="author" content="">
     
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.js"></script>
-	
+
     <title>Veio Automations</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/justified-nav.css" rel="stylesheet">
+    <link href="css/cover.css" rel="stylesheet">
 
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
 
   <body>
 
-    <div class="container">
-    	<div ng-include="'menu.html'"></div>
+    <div class="site-wrapper">
 
-        <br/><br/><br/><br/>
-      
-      
-      <div class="well">
-        <p>This project was created by Lucas Ferst and the initial goal was just to have a online way to control his home electrical devices... I'll enter more clear text here once I have more details ...</p>
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">Veio Automations</h3>
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li class="active"><a href="home.html">Home</a></li>
+                  <li><a href="automations.html">Access</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="inner cover">
+            <h1 class="cover-heading">Control your home remotely</h1>
+             <br><br>
+            <p class="lead"><img alt="" src="images/home_automation_companies.jpg"></p>
+            <br><br><br>
+            <p class="lead">
+            Véio Automations provides electrical home automation to create a smart home that is simple to use. Web based, it provides the ability to control your home’s eletronic devices, environment and security from anywhere in the world. 
+            </p>
+            <p class="lead">
+              <a href="automations.html" class="btn btn-lg btn-default">Access your home</a>
+            </p>
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+              <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by Lucas Ferst.</p>
+            </div>
+          </div>
+
+        </div>
+
       </div>
 
-      <div align="center">
-		<img alt="house" src="images/house.png" height="30%" width="30%" align="center">
-        <p><a class="btn btn-lg btn-success" href="automations.html" role="button">Access automated House</a></p>
-      </div>
+    </div>
 
-      
-
-      <!-- Site footer -->
-      <footer class="footer">
-        <p>&copy; Lucas Ferst 2015</p>
-      </footer>
-
-    </div> <!-- /container -->
-
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>

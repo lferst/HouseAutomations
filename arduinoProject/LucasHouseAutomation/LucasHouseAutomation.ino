@@ -128,6 +128,7 @@ void checkForClient(){
               airConditionedONOFF(client);
               lcd.setCursor(0, 1);
               lcd.print(" OK");
+              break;
            case  '7':
               lcd.clear(); 
               lcd.print("Reading Temperature ");
